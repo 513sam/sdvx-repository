@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="profile">
+                <img src="image/icon.png" alt="사용자 프로필">
+                <span class="username">사용자 이름</span>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="image/menu.png" alt="메뉴 아이콘">
+            </div>
+        </div>
+        <!-- 드롭다운 메뉴 -->
+        <div id="menu" class="dropdown-menu">
+            <ul>
+                <li><a href="#">추천 인기 상품</a></li>
+                <li><a href="#">상품 의뢰</a></li>
+                <li><a href="#">문의사항</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="main-tag">
+        <h1>커스터마이징 카드 회사</h1>
+        <p>당신만의 맞춤 카드를 디자인해보세요!</p>
+    </section>
+
+    <section class="scroll-content">
+        <h2>내가 파는 카드 상품들</h2>
+        <h4>가로형 카드</h4>
+        <!-- 가로 사진들 -->
+        <div class="card-container horizontal">
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+            <div class="card-item" onclick="gotoDetail(this)" data-name="identity">
+                <img src="image/h_card1_front.png" alt="가로 사진 1">
+                <p>가로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+        </div>
+        <!-- 분리-->
+        <h4>세로형 카드</h4>
+        <!-- 세로 사진들 -->
+        <div class="card-container vertical">
+            <div class="card-item" onclick="gotoDetail(this)" data-name="세로 사진 1">
+                <img src="image/v_card1_front.png" alt="세로 사진 1">
+                <p>세로 사진 1</p>
+                <button class="goto-detail">구매하기</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

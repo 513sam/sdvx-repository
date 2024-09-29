@@ -1,0 +1,205 @@
+/* 전체적인 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+}
+
+header {
+    background-color: #ff99cc;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-name {
+    color: white;
+    font-size: 18px;
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-tag {
+    text-align: center;
+    padding: 50px;
+    background-color: #ff99cc;
+}
+
+.main-tag h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.main-tag p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* 상세 페이지 스타일 */
+.scroll-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-container {
+    display: flex;
+    gap: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-wrapper {
+    border: 2px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.2); /* 확대 효과 */
+}
+
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff66a3;
+    margin: 10px 0;
+}
+
+.artist {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#card-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* 버튼을 좌우로 균등하게 */
+}
+
+.btn {
+    flex: 1; /* 버튼 너비를 균등하게 만듦 */
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;/* 버튼의 배경색과 크기   */
+    text-align: center;
+}
+
+/* 버튼을 동일한 크기로 유지 */
+.cart-btn{
+    min-width: 200px; /* 버튼 최소 너비 설정 */
+    border: 2px solid #ff3399; /* 분홍색 테두리 */
+    border-radius: 10px;
+    font-weight: bold;
+}
+.buy-btn{
+    min-width: 200px; /* 버튼 최소 너비 설정 */
+    border: 2px solid #333; /* 분홍색 테두리 */
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffffff; /* 호버 시 배경색 변화 */
+    color: #ff3399;
+    
+}
+
+.cart-btn {
+    background-color: #ff3399;
+    color: white;
+}
+
+.cart-btn:hover {
+    background-color: #ffffff;
+}
+
+.buy-btn {
+    background-color: #333;
+    color: white;
+}
+
+.buy-btn:hover {
+    background-color: #ffffff;
+    color: #333;
+
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

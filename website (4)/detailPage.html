@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Detail Page</title>
+    <link rel="stylesheet" href="detailPage_style.css"> <!-- 분리된 CSS 파일 불러오기 -->
+</head>
+<body>
+    <header>
+        <div class="user-profile">
+            <img class="user-icon" src="user-icon.jpg" alt="User Icon">
+            <span class="user-name">User Name</span>
+        </div>
+        <div class="menu-icon">
+            <img src="menu-icon.png" alt="Menu">
+        </div>
+    </header>
+
+    <section class="main-tag">
+        <h1>Card Detail</h1>
+        <p>Check out the detailed information of the selected card.</p>
+    </section>
+
+    <div class="scroll-content">
+        <div class="detail-container">
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img id="front-image" src="" alt="Front Image" class="zoom-image">
+                </div>
+                <div class="image-wrapper">
+                    <img id="back-image" src="" alt="Back Image" class="zoom-image">
+                </div>
+            </div>
+            <div class="info-section">
+                <h2 id="card-name">Card Name</h2>
+                <p id="card-price" class="price">₩99,999</p>
+                <p id="card-artist" class="artist">Artist: Unknown</p>
+                <p id="card-description">This is the description of the card.</p>
+                <div class="buttons">
+                    <button class="btn cart-btn">장바구니 담기</button>
+                    <button class="btn buy-btn">구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="detailPage_script.js"></script>
+</body>
+</html>
